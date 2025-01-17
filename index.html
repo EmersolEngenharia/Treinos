@@ -3,122 +3,443 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Plano de Treinos - Sprint Triathlon</title>
+    <title>Plano de Treinamento - Sprint Triathlon</title>
     <style>
-        body { font-family: Arial, sans-serif; line-height: 1.6; padding: 20px; background-color: #f4f4f4; }
-        h2 { background: #007bff; color: #fff; padding: 10px; }
-        h3 { color: #007bff; }
-        p { margin: 10px 0; }
-        ul { list-style-type: none; padding: 0; }
-        li { background: #fff; margin: 5px 0; padding: 10px; border-radius: 5px; }
-        .container { max-width: 800px; margin: auto; background: #fff; padding: 20px; border-radius: 10px; }
-        nav { background: #007bff; padding: 10px; text-align: center; }
-        nav a { color: white; text-decoration: none; margin: 0 15px; font-weight: bold; }
-        nav a:hover { text-decoration: underline; }
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background: #007bff;
+            color: #fff;
+            padding: 15px 0;
+            text-align: center;
+        }
+        nav {
+            background: #0056b3;
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h2, h3 {
+            color: #007bff;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        ul li {
+            margin: 10px 0;
+        }
+        .section {
+            margin-bottom: 30px;
+        }
+        .table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+        }
+        .table th, .table td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        .table th {
+            background-color: #007bff;
+            color: white;
+        }
     </style>
 </head>
 <body>
+    <header>
+        <h1>Plano de Treinamento - Sprint Triathlon</h1>
+    </header>
     <nav>
-        <a href="#musculacao">Musculação</a>
-        <a href="#corrida">Corrida</a>
-        <a href="#ciclismo">Ciclismo</a>
-        <a href="#natacao-sabado">Natação - Sábado</a>
-        <a href="#natacao-domingo">Natação - Domingo</a>
+        <a href="#treinamento-semanal">📅 Treinamento Semanal</a>
+        <a href="#natacao">🏊 Natação</a>
+        <a href="#corrida">🏃 Corrida</a>
+        <a href="#ciclismo">🚴 Ciclismo</a>
+        <a href="#musculacao">🏋️ Musculação</a>
     </nav>
     <div class="container">
-        <h2 id="natacao-sabado">🏊 Treino de Natação – Sábado (Técnica + Resistência)</h2>
-        <p><strong>Objetivo:</strong> Aprimorar a técnica e melhorar a resistência para nadar 750m sem parar.</p>
-        <h3>Séries</h3>
-        <ul>
-            <li><strong>Aquecimento:</strong> 200m (4x50m) – Crawl, costas, peito, crawl.</li>
-            <li><strong>Técnica:</strong> 3x50m – Pernada com prancha, Nado Polo, Nado com Pull Buoy.</li>
-            <li><strong>Resistência:</strong> 4x100m – Crawl contínuo, descanso de 30s.</li>
-            <li><strong>Velocidade:</strong> 6x50m – Moderado/rápido com 20s de descanso.</li>
-            <li><strong>Desaquecimento:</strong> 200m (4x50m) – Crawl relaxado, costas, peito, solto.</li>
-        </ul>
-        
-        <h2 id="natacao-domingo">🏊 Treino de Natação – Domingo (Resistência Progressiva)</h2>
-        <p><strong>Objetivo:</strong> Aumentar gradualmente a distância percorrida sem pausas.</p>
-        <h3>Séries</h3>
-        <ul>
-            <li><strong>Aquecimento:</strong> 200m (4x50m).</li>
-            <li><strong>Resistência Longa:</strong> 3x200m – Crawl contínuo com 30s de descanso.</li>
-            <li><strong>Progresso para 750m:</strong> 1x300m contínuo.</li>
-            <li><strong>Técnica + Respiração:</strong> 3x50m – Alternar lado da respiração.</li>
-            <li><strong>Desaquecimento:</strong> 200m (4x50m).</li>
-        </ul>
-        
-        <h2 id="corrida">🏃 Treino de Corrida</h2>
-        <ul>
-            <h3>Segunda: Intervalado – 6 a 8 tiros de 400m.<h3>
-            <h3>Quarta: Corrida Longa – 8 a 10 km ritmo confortável.<h3>
-            <h3>Quinta: Transição Bike-Corrida (Brick Training) – 20km pedal + 2km corrida.<h3>
-            
-            <h3>Sexta: Corrida Rápida – 5km ritmo forte.<h3>
-            <li>&nbsp;&nbsp;&nbsp;&nbsp;<strong>Aquecimento:</strong> 10 min trote leve.</li>
-            <li>&nbsp;&nbsp;&nbsp;&nbsp;<strong>Treino:</strong> 5km contínuos tentando manter um pace forte (de 4:40-4:50 min/km)</li>
-            <li>&nbsp;&nbsp;&nbsp;&nbsp;<strong>Desaquecimento:</strong> 5 min trote leve + alongamento</li>
-            
-            <h3>Sábado: Corrida Pós-Ciclismo – 50-70km pedal + 3km corrida.<h3>
-            <h3>Domingo:Descanso ou regeneração ativa.<h3>
-        </ul>
-        
-        <h2 id="ciclismo">🚴 Treinos de Ciclismo</h2>
-        <ul>
-            <li><strong>Terça:</strong> Resistência – 30-40km ritmo moderado.</li>
-            <li><strong>Quinta:</strong> Brick Training – 20km pedal + 2km corrida.</li>
-            <li><strong>Sábado:</strong> Longo + Transição – 50-70km pedal + 3km corrida.</li>
-        </ul>
-        
-<h2 id="musculacao">🏋️ Plano de Musculação para Triatletas</h2>
-        <p><strong>Objetivo:</strong> Melhorar resistência muscular, potência e prevenir lesões.</p>
-        <p><strong>Divisão:</strong> Treinos distribuídos de segunda a sexta (4 a 5 sessões semanais).</p>
-        <p><strong>Carga:</strong> Moderada a alta, com ênfase em força funcional e exercícios compostos.</p>
-        
-        <h3>🏋️ Segunda-feira – Membros Inferiores + Core (Foco na Corrida)</h3>
-        <ul>
-            <li><strong>Agachamento Livre:</strong> 4x8-12 - Fortalece pernas e core.</li>
-            <li><strong>Levantamento Terra:</strong> 3x8-10 - Trabalha força e estabilidade.</li>
-            <li><strong>Afundo com Halteres:</strong> 3x10 cada perna - Foco na resistência muscular.</li>
-            <li><strong>Gêmeos em Pé:</strong> 3x12-15 - Essencial para resistência na corrida.</li>
-            <li><strong>Prancha (estática e dinâmica):</strong> 3x30s - Core forte = melhor eficiência na corrida.</li>
-        </ul>
-        
-        <h3>🏋️ Terça-feira – Membros Superiores + Core (Força e Estabilidade)</h3>
-        <ul>
-            <li><strong>Supino Reto com Barra:</strong> 4x8-12 - Força no peitoral e ombros.</li>
-            <li><strong>Remada Curvada com Barra:</strong> 3x8-12 - Melhora postura na bike.</li>
-            <li><strong>Desenvolvimento com Halteres:</strong> 3x8-10 - Fortalece ombros e estabilidade.</li>
-            <li><strong>Rosca Martelo:</strong> 3x10-12 - Complemento para força nos braços.</li>
-            <li><strong>Abdominais (Infra + Oblíquos):</strong> 3x20 - Essencial para resistência e postura.</li>
-        </ul>
-        
-        <h3>🏋️ Quinta-feira – Corpo Inteiro (Full Body + Explosão)</h3>
-        <ul>
-            <li><strong>Agachamento com Salto:</strong> 3x10 - Potência para corrida e pedal.</li>
-            <li><strong>Levantamento Terra Romeno:</strong> 3x8-12 - Trabalha posterior de coxa e core.</li>
-            <li><strong>Barra Fixa ou Pulldown:</strong> 3x8-12 - Fortalece costas e postura.</li>
-            <li><strong>Kettlebell Swing:</strong> 3x12-15 - Potência + resistência.</li>
-            <li><strong>Prancha com Elevação de Perna:</strong> 3x30s cada perna - Estabilidade para bike e corrida.</li>
-        </ul>
-        
-        <h3>🏋️ Sexta-feira – Musculação Leve ou Alongamento</h3>
-        <ul>
-            <li><strong>Leg Press:</strong> 3x12-15 - Menor carga, mais repetições.</li>
-            <li><strong>Extensora + Flexora:</strong> 3x12-15 - Ativa musculatura sem sobrecarregar.</li>
-            <li><strong>Pullover:</strong> 3x10-12 - Fortalece peitoral e ombros para natação.</li>
-            <li><strong>Alongamentos Dinâmicos:</strong> Recuperação ativa.</li>
-        </ul>
-        
-        <h3>🔥 Estratégia para Musculação no Triathlon</h3>
-        <ul>
-            <li>✔ Carga moderada a alta (evitar fadiga extrema para não comprometer corrida/natação).</li>
-            <li>✔ Ênfase em exercícios compostos (agachamentos, levantamento terra, remadas).</li>
-            <li>✔ Core forte é essencial (ajuda na postura no ciclismo e eficiência na corrida).</li>
-            <li>✔ Evitar treinos muito pesados em dias de treino intenso de corrida ou bike.</li>
-        </ul>
-        
-        <p>Com essa rotina, você terá mais potência, resistência e menos risco de lesões, otimizando sua performance no Sprint Triathlon. 🚀🔥</p>
+        <div id="treinamento-semanal" class="section">
+            <h2>📅 Treinamento Semanal</h2>
+            <ul>
+                <li><strong>Segunda-feira:</strong> 🏋️‍♂️ Musculação (inferiores), 🏃 Corrida Intervalada, ⚕️ Descanso ou alongamento.</li>
+                <li><strong>Terça-feira:</strong> 🚴 Ciclismo (30-40km), 🏋️‍♂️ Musculação (superiores e core).</li>
+                <li><strong>Quarta-feira:</strong> 🏃 Corrida Longa (8-10 km), ⚕️ Descanso ou fisioterapia.</li>
+                <li><strong>Quinta-feira:</strong> 🏋️‍♂️ Musculação (full body leve), 🚴-🏃 Transição Bike-Corrida.</li>
+                <li><strong>Sexta-feira:</strong> 🏃 Corrida Rápida (5 km), 🏋️‍♂️ Musculação leve ou descanso.</li>
+                <li><strong>Sábado:</strong> 🚴 Ciclismo Longo (50-70 km), 🏃 Corrida curta (3 km), 🏊 Natação (técnica + resistência).</li>
+                <li><strong>Domingo:</strong> 🏊 Natação Contínua (500-750m), ⚕️ Descanso ou leve mobilidade.</li>
+            </ul>
+        </div>
+        <div id="natacao" class="section">
+            <h2>🏊 Natação</h2>
+            <h3>🏊 Treino de Sábado</h3>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Séries</th>
+                        <th>Descrição</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Aquecimento</td>
+                        <td>200m (4x50m) - 50m crawl suave, 50m costas, 50m peito, 50m crawl.</td>
+                    </tr>
+                    <tr>
+                        <td>Técnica</td>
+                        <td>3x50m - Pernada com prancha, Nado Polo, Nado com Pull Buoy.</td>
+                    </tr>
+                    <tr>
+                        <td>Resistência</td>
+                        <td>4x100m - 100m crawl contínuo, descanso de 30s entre séries.</td>
+                    </tr>
+                    <tr>
+                        <td>Velocidade</td>
+                        <td>6x50m - 50m moderado/rápido com 20s de descanso.</td>
+                    </tr>
+                    <tr>
+                        <td>Desaquecimento</td>
+                        <td>200m (4x50m) - 50m nado livre relaxado, 50m costas, 50m peito, 50m solto.</td>
+                    </tr>
+                </tbody>
+            </table>
+            <h3>🏊 Treino de Domingo</h3>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Séries</th>
+                        <th>Descrição</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Aquecimento</td>
+                        <td>200m (4x50m) - Crawl, costas, peito, crawl.</td>
+                    </tr>
+                    <tr>
+                        <td>Resistência Longa</td>
+                        <td>3x200m - Crawl contínuo com 30s de descanso.</td>
+                    </tr>
+                    <tr>
+                        <td>Progresso</td>
+                        <td>1x300m - Crawl contínuo (sem parar).</td>
+                    </tr>
+                    <tr>
+                        <td>Desaquecimento</td>
+                        <td>200m (4x50m) - Crawl relaxado, costas, peito, solto.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div id="corrida" class="section">
+            <h2>🏃 Corrida</h2>
+            <h3>🏃 Treino de Corrida – Detalhamento</h3>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Dia</th>
+                        <th>Tipo de Treino</th>
+                        <th>Descrição Detalhada</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Segunda-feira</td>
+                        <td>Intervalado (Velocidade + Potência)</td>
+                        <td>Aquecimento: 10 min trote leve + mobilidade<br>Treino: 6 a 8 tiros de 400m em ritmo forte (5-10s mais rápido que ritmo de prova) com 1 min de descanso ativo (caminhada leve)<br>Desaquecimento: 5 min trote leve + alongamento</td>
+                    </tr>
+                    <tr>
+                        <td>Quarta-feira</td>
+                        <td>Corrida Longa (Resistência e Base)</td>
+                        <td>Aquecimento: 10 min trote leve<br>Treino: 8 a 10 km em ritmo confortável (zona 2-3 de esforço)<br>Objetivo: Construção aeróbica para suportar melhor o esforço no Sprint Triathlon<br>Desaquecimento: 5 min trote + mobilidade</td>
+                    </tr>
+                    <tr>
+                        <td>Quinta-feira</td>
+                        <td>Transição Bike-Corrida (Brick Training)</td>
+                        <td>Objetivo: Simular o Sprint Triathlon<br>Treino: 🚴 20km pedal (moderado) + 🏃 2km corrida em ritmo progressivo<br>Transição rápida: Não descansar entre as modalidades</td>
+                    </tr>
+                    <tr>
+                        <td>Sexta-feira</td>
+                        <td>Corrida Rápida (Ritmo de Prova)</td>
+                        <td>Aquecimento: 10 min trote leve<br>Treino: 5km contínuos tentando manter um pace forte (próximo de 4:40-4:50 min/km)<br>Objetivo: Simular a prova e acostumar o corpo ao esforço<br>Desaquecimento: 5 min trote leve + alongamento</td>
+                    </tr>
+                    <tr>
+                        <td>Sábado</td>
+                        <td>Corrida Pós-Ciclismo (Transição)</td>
+                        <td>Treino: 🚴 50-70 km pedal moderado + 🏃 3km corrida em ritmo leve a moderado<br>Objetivo: Adaptação à transição e recuperação após pedal</td>
+                    </tr>
+                    <tr>
+                        <td>Domingo</td>
+                        <td>Descanso ou regeneração ativa</td>
+                        <td>Opcional: 20-30 min trote leve + alongamento</td>
+                    </tr>
+                </tbody>
+            </table>
+            <h3>🏃💨 Explicação dos Tipos de Treinos</h3>
+            <ul>
+                <li><strong>Intervalado (segunda-feira):</strong> Aumenta velocidade e resistência anaeróbica.</li>
+                <li><strong>Corrida Longa (quarta-feira):</strong> Base aeróbica e capacidade de manter ritmo por mais tempo.</li>
+                <li><strong>Brick Training (quinta-feira e sábado):</strong> Simula transição do triathlon (ciclismo para corrida).</li>
+                <li><strong>Corrida Rápida (sexta-feira):</strong> Ritmo próximo ao de prova para acostumar o corpo.</li>
+            </ul>
+        </div>
+        <div id="ciclismo" class="section">
+```html
+<h3>🚴 Treinos de Ciclismo – Semanais</h3>
+<table class="table">
+    <thead>
+        <tr>
+            <th>Dia</th>
+            <th>Tipo de Treino</th>
+            <th>Descrição Detalhada</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Terça-feira</td>
+            <td>Treino de Resistência (Endurance)</td>
+            <td>
+                🚴 Distância: 30-40km<br>
+                🏁 Zona de esforço: Moderado (zona 2-3)<br>
+                🔄 Objetivo: Construir base aeróbica e resistência para manter potência por longos períodos.<br>
+                🔧 Dica: Manter cadência entre 85-95 rpm.
+            </td>
+        </tr>
+        <tr>
+            <td>Quinta-feira</td>
+            <td>Treino de Transição (Brick Training)</td>
+            <td>
+                🚴 Pedal: 20km moderado + 🏃 2km corrida rápida (transição direta).<br>
+                🏁 Zona de esforço: Moderado a intenso.<br>
+                🔄 Objetivo: Simular o Sprint Triathlon e preparar o corpo para a corrida pós-bike.
+            </td>
+        </tr>
+        <tr>
+            <td>Sábado</td>
+            <td>Treino Longo + Transição para Corrida</td>
+            <td>
+                🚴 Distância: 50-70km.<br>
+                🏁 Zona de esforço: 75-85% do FTP ou ritmo confortável.<br>
+                🏃 Transição: 3km corrida leve-moderada.<br>
+                🔄 Objetivo: Aumentar resistência e treinar a transição para a corrida.
+            </td>
+        </tr>
+        <tr>
+            <td>Opcional</td>
+            <td>Treino de Intensidade (Fartlek)</td>
+            <td>
+                🚴 Duração: 45 min.<br>
+                🔄 Estratégia: 5 min aquecimento → 3 min forte / 2 min leve (repetir 5x) → 5 min desaquecimento.<br>
+                🏁 Objetivo: Melhorar potência e VO2 máximo.
+            </td>
+        </tr>
+    </tbody>
+</table>
+<h3>📌 Explicação dos Treinos</h3>
+<ul>
+    <li><strong>Terça-feira (Resistência/Endurance):</strong> Pedal moderado para desenvolver resistência. Ritmo confortável, mas desafiador, com cadência eficiente (85-95 rpm). Ideal para rodovias seguras ou simuladores indoor.</li>
+    <li><strong>Quinta-feira (Transição Bike → Corrida - Brick Training):</strong> Treino chave para o Sprint Triathlon. Simular esforço real com transição rápida sem descanso entre as modalidades.</li>
+    <li><strong>Sábado (Pedal Longo + Transição para Corrida):</strong> Essencial para resistência no triathlon. Gradualmente, aumente a intensidade e prepare o corpo para longas distâncias e transições.</li>
+    <li><strong>Treino Opcional (Intensidade - Fartlek):</strong> Simula variações de ritmo para melhorar potência e resposta cardiovascular, excelente para treinos indoor.</li>
+</ul>
+<h3>🔥 Estratégia para Melhorar no Ciclismo</h3>
+<ul>
+    <li>🔹 Manter cadência ideal entre 85-95 rpm para eficiência.</li>
+    <li>🔹 Ajustar postura para evitar desconforto e melhorar aerodinâmica.</li>
+    <li>🔹 Trocar marchas corretamente para manter esforço constante.</li>
+    <li>🔹 Ingerir 30-60g de carboidrato por hora no pedal longo para manter energia.</li>
+    <li>🔹 Pedalar contra o vento para melhorar resistência.</li>
+</ul>
+```
+        <div id="musculacao" class="section">
+    <h2>🏋️ Plano de Musculação para Triatletas</h2>
+    <p>📌 <strong>Objetivo:</strong> Melhorar resistência muscular, potência e prevenir lesões.</p>
+    <p>📌 <strong>Divisão:</strong> Treinos distribuídos de segunda a sexta (4 a 5 sessões semanais).</p>
+    <p>📌 <strong>Carga:</strong> Moderada a alta, com ênfase em força funcional e exercícios compostos.</p>
+    
+    <h3>🏋️ Segunda-feira – Membros Inferiores + Core (Foco na Corrida)</h3>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Exercício</th>
+                <th>Séries x Repetições</th>
+                <th>Observação</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Agachamento Livre</td>
+                <td>4x8-12</td>
+                <td>Fortalece pernas e core</td>
+            </tr>
+            <tr>
+                <td>Levantamento Terra</td>
+                <td>3x8-10</td>
+                <td>Trabalha força e estabilidade</td>
+            </tr>
+            <tr>
+                <td>Afundo com Halteres</td>
+                <td>3x10 cada perna</td>
+                <td>Foco na resistência muscular</td>
+            </tr>
+            <tr>
+                <td>Gêmeos em Pé</td>
+                <td>3x12-15</td>
+                <td>Essencial para resistência na corrida</td>
+            </tr>
+            <tr>
+                <td>Prancha (estática e dinâmica)</td>
+                <td>3x30s</td>
+                <td>Core forte = melhor eficiência na corrida</td>
+            </tr>
+        </tbody>
+    </table>
+    
+    <h3>🏋️ Terça-feira – Membros Superiores + Core (Força e Estabilidade)</h3>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Exercício</th>
+                <th>Séries x Repetições</th>
+                <th>Observação</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Supino Reto com Barra</td>
+                <td>4x8-12</td>
+                <td>Força no peitoral e ombros</td>
+            </tr>
+            <tr>
+                <td>Remada Curvada com Barra</td>
+                <td>3x8-12</td>
+                <td>Melhora postura na bike</td>
+            </tr>
+            <tr>
+                <td>Desenvolvimento com Halteres</td>
+                <td>3x8-10</td>
+                <td>Fortalece ombros e estabilidade</td>
+            </tr>
+            <tr>
+                <td>Rosca Martelo</td>
+                <td>3x10-12</td>
+                <td>Complemento para força nos braços</td>
+            </tr>
+            <tr>
+                <td>Abdominais (Infra + Oblíquos)</td>
+                <td>3x20</td>
+                <td>Essencial para resistência e postura</td>
+            </tr>
+        </tbody>
+    </table>
+    
+    <h3>🏋️ Quinta-feira – Corpo Inteiro (Full Body + Explosão)</h3>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Exercício</th>
+                <th>Séries x Repetições</th>
+                <th>Observação</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Agachamento com Salto</td>
+                <td>3x10</td>
+                <td>Potência para corrida e pedal</td>
+            </tr>
+            <tr>
+                <td>Levantamento Terra Romeno</td>
+                <td>3x8-12</td>
+                <td>Trabalha posterior de coxa e core</td>
+            </tr>
+            <tr>
+                <td>Barra Fixa ou Pulldown</td>
+                <td>3x8-12</td>
+                <td>Fortalece costas e postura</td>
+            </tr>
+            <tr>
+                <td>Kettlebell Swing</td>
+                <td>3x12-15</td>
+                <td>Potência + resistência</td>
+            </tr>
+            <tr>
+                <td>Prancha com Elevação de Perna</td>
+                <td>3x30s cada perna</td>
+                <td>Estabilidade para bike e corrida</td>
+            </tr>
+        </tbody>
+    </table>
+    
+    <h3>🏋️ Sexta-feira – Musculação Leve ou Alongamento</h3>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Exercício</th>
+                <th>Séries x Repetições</th>
+                <th>Observação</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Leg Press</td>
+                <td>3x12-15</td>
+                <td>Menor carga, mais repetições</td>
+            </tr>
+            <tr>
+                <td>Extensora + Flexora</td>
+                <td>3x12-15</td>
+                <td>Ativa musculatura sem sobrecarregar</td>
+            </tr>
+            <tr>
+                <td>Pullover</td>
+                <td>3x10-12</td>
+                <td>Fortalece peitoral e ombros para natação</td>
+            </tr>
+            <tr>
+                <td>Alongamentos Dinâmicos</td>
+                <td>-</td>
+                <td>Recuperação ativa</td>
+            </tr>
+        </tbody>
+    </table>
+    
+    <h3>🔥 Estratégia para Musculação no Triathlon</h3>
+    <ul>
+        <li>✔ Carga moderada a alta (evitar fadiga extrema para não comprometer corrida/natação).</li>
+        <li>✔ Ênfase em exercícios compostos (agachamentos, levantamento terra, remadas).</li>
+        <li>✔ Core forte é essencial (ajuda na postura no ciclismo e eficiência na corrida).</li>
+        <li>✔ Evitar treinos muito pesados em dias de treino intenso de corrida ou bike.</li>
+    </ul>
+</div>
+
     </div>
 </body>
 </html>
+
+
+
+
